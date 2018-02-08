@@ -12,7 +12,7 @@ class Home extends Component{
       console.log(this.props)
       return(
         <div>
-            <TaskTable tasks={this.props.tasks.tasks} />
+            <TaskTable tasks={this.props.tasks.tasks} fetch={this.props.fetchTasks}/>
         </div>
       )
     }

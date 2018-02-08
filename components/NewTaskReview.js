@@ -14,11 +14,11 @@ const NewTaskReview = props =>{
   console.log('review props:',props);
   const { onCancel, formValues, submitTask } = props
 
-  if(formValues.image){
+  // if(formValues.image.size !== 0){
     const imgURL = window.URL.createObjectURL(formValues.image);
-  } else {
-    const imgURL = null
-  }
+  // } else {
+    // const imgURL = null
+  // }
 
   function createAntother(){
     var form = new FormData();
